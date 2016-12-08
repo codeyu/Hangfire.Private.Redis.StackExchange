@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Hangfire.Private.Redis.StackExchange", "Hangfire.Private.Redis.StackExchange\Hangfire.Redis.StackExchange.xproj", "{9DABE359-48C5-4910-A642-1CD6BBE95423}"
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Hangfire.Private.Redis.StackExchange", "Hangfire.Private.Redis.StackExchange\Hangfire.Private.Redis.StackExchange.xproj", "{9DABE359-48C5-4910-A642-1CD6BBE95423}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Hangfire.Redis.Tests", "Hangfire.Redis.Tests\Hangfire.Redis.Tests.xproj", "{C082AF1C-CE27-4132-9363-19C05BDB7362}"
 EndProject

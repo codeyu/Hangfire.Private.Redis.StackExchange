@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
-        <id>Hangfire.Redis.StackExchange</id>
+        <id>Hangfire.Private.Redis.StackExchange</id>
         <version>$version$-beta</version>
         <title>Hangfire Redis Storage</title>
         <authors>Marco Casamento</authors>
-        <owners>marcocasamento</owners>
-        <projectUrl>https://github.com/marcoCasamento/Hangfire.Redis.StackExchange</projectUrl>
+        <owners>codeyu</owners>
+        <projectUrl>https://github.com/codeyu/Hangfire.Private.Redis.StackExchange</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Hangfire Redis Storage Based on Redis.StackExchange
 See http://hangfire.io/ for some more info on the main project</description>
@@ -43,7 +43,7 @@ It also supports Batches (Pro Feature)</summary>
         </dependencies>
     </metadata>
     <files>
-        <file src="bin\Release\net45\Hangfire.Redis.StackExchange.dll" target="lib\net45\Hangfire.Redis.StackExchange.dll" />
-        <file src="bin\Release\netstandard1.6\Hangfire.Redis.StackExchange.dll" target="lib\netstandard1.6\Hangfire.Redis.StackExchange.dll" />
+        <file src="bin\Release\net45\Hangfire.Private.Redis.StackExchange.dll" target="lib\net45\Hangfire.Private.Redis.StackExchange.dll" />
+        <file src="bin\Release\netstandard1.6\Hangfire.Private.Redis.StackExchange.dll" target="lib\netstandard1.6\Hangfire.Private.Redis.StackExchange.dll" />
     </files>
 </package>
