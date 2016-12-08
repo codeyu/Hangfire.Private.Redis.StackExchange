@@ -1,4 +1,4 @@
-// Copyright © 2013-2015 Sergey Odinokov, Marco Casamento 
+// Copyright ï¿½ 2013-2015 Sergey Odinokov, Marco Casamento 
 // This software is based on https://github.com/HangfireIO/Hangfire.Redis 
 
 // Hangfire.Redis.StackExchange is free software: you can redistribute it and/or modify
@@ -40,7 +40,7 @@ namespace Hangfire.Redis
         private TimeSpan _fetchTimeout;
 
         public RedisStorage()
-            : this("localhost:6379")
+            : this("127.0.0.1:6379")
         {
         }
         public RedisStorage(ConnectionMultiplexer connectionMultiplexer, RedisStorageOptions options = null)
