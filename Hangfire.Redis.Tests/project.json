@@ -8,6 +8,7 @@
     "StackExchange.Redis": "1.1.608",
     "xunit": "2.2.0-beta2-build3300",
     "dotnet-test-xunit": "2.2.0-preview2-build1029",
+    "Microsoft.DotNet.InternalAbstractions": "1.0.0",
     "Moq": "4.6.38-alpha",
     "Hangfire.Redis.StackExchange": "1.0.0"
   },
