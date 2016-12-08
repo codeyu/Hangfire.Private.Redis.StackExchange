@@ -12,9 +12,10 @@ if not "%BuildCounter%" == "" (
 REM (optional) build.bat is in the root of our repo, cd to the correct folder where sources/projects are
 REM cd Hangfire.Private.Redis.StackExchange
 
-call %nuget% install Redis-64 -OutputDirectory packages
-packages\Redis-64\tools\redis-server.exe --service-install
-packages\Redis-64\tools\redis-server.exe --service-start
+REM call %nuget% install Redis-64 -OutputDirectory packages
+REM packages\Redis-64\tools\redis-server.exe --service-install
+REM packages\Redis-64\tools\redis-server.exe --service-start
+
 REM Restore
 call dotnet restore 
 if not "%errorlevel%"=="0" goto failure
@@ -28,9 +29,9 @@ REM call dotnet build --configuration %config%
 if not "%errorlevel%"=="0" goto failure
 
 REM Unit tests
-call dotnet test .\Hangfire.Redis.Tests -f netcoreapp1.0
-call dotnet test .\Hangfire.Redis.Tests -f net451
-if not "%errorlevel%"=="0" goto failure
+REM call dotnet test .\Hangfire.Redis.Tests -f netcoreapp1.0
+REM call dotnet test .\Hangfire.Redis.Tests -f net451
+REM if not "%errorlevel%"=="0" goto failure
 
 REM Package
 mkdir %cd%\Artifacts

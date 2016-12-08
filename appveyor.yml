@@ -35,6 +35,7 @@ before_package:
 - ps: nuget pack .\Hangfire.Private.Redis.StackExchange\HangFire.Private.Redis.StackExchange.nuspec -Version $env:APPVEYOR_BUILD_VERSION
 deploy:
   provider: NuGet
+  symbol_server: https://ci.appveyor.com/nuget/codeyu/api/v2/package
   api_key:
-    secure: Wrq+QibneTq9Rvutd75Y7Hvf+UcJ3K/RA/cl1Eb4ViymauThEu1/g22002Bx4MHn
+    secure: BKLh2M3lMUmqLpl/7tKyiK39CIwENPhb7Hh+RB4ipqw=
   artifact: /.*\.nupkg/
