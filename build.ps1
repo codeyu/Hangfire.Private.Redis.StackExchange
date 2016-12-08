@@ -68,7 +68,7 @@ exec { & dotnet restore .\Hangfire.Redis.StackExchange }
 exec { & dotnet build .\Hangfire.Redis.StackExchange }
 
 $release = Join-Path $pwd release
-exec { & dotnet publish .\Hangfire.Redis.StackExchange -c Release -o $release --version-suffix=$revision}
+exec { & dotnet pack .\Hangfire.Redis.StackExchange -c Release -o $release --version-suffix=$revision}
 
 $packToZip = $false
 if($packToZip){
