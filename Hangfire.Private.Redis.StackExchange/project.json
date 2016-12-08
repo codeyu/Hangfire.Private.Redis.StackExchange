@@ -1,4 +1,8 @@
 ﻿{
+  "version": "1.0.0-*",
+
+  "name": "Hangfire.Private.Redis.StackExchange",
+  "description": "My Hangfire.Redis.StackExchange",
   "dependencies": {
     "NETStandard.Library": "1.6.0",
     "Hangfire.Core": "1.6.5",
