@@ -12,7 +12,7 @@ if not "%BuildCounter%" == "" (
 REM (optional) build.bat is in the root of our repo, cd to the correct folder where sources/projects are
 REM cd Hangfire.Private.Redis.StackExchange
 
-REM call %nuget% install Redis-64 -OutputDirectory packages
+call %nuget% install Redis-64 -OutputDirectory packages
 REM packages\Redis-64\tools\redis-server.exe --service-install
 REM packages\Redis-64\tools\redis-server.exe --service-start
 
