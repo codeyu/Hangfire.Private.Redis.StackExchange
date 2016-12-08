@@ -74,7 +74,7 @@ $packToZip = $false
 if($packToZip){
 
     $tmp = Join-Path $pwd tmp
-    exec { & dotnet publish .\Hangfire.Redis.StackExchange -c Release -o $tmp --version-suffix=$revision}
+    exec { & dotnet pack .\Hangfire.Redis.StackExchange -c Release -o $tmp --version-suffix=$revision}
 
     # zip pack to .\artifacts\name-version.zip
     $json = Get-Content -Raw -Path (Join-Path $pwd 'Hangfire.Redis.StackExchange\project.json') | ConvertFrom-Json
