@@ -1,7 +1,8 @@
 # Hangfire.Redis.StackExchange
 
-![Build Status](https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva/branch/master?svg=true)
-[![Nuget Badge](https://buildstats.info/nuget/Hangfire.Redis.StackExchange)](https://www.nuget.org/packages/Hangfire.Redis.StackExchange/)
+![Build Status](https://ci.appveyor.com/api/projects/status/g3kymrbabl5hifk0/branch/master?svg=true)
+
+[![Hangfire.Private.Redis.StackExchange Nightly Build Status](https://www.myget.org/BuildSource/Badge/Hangfire.Private.Redis.StackExchange?identifier=353f7625-8961-4162-b1b3-bd28373cc4b6)](https://www.myget.org/gallery/Hangfire.Private.Redis.StackExchange)
 
 HangFire Redis storage based on [HangFire.Redis](https://github.com/HangfireIO/Hangfire.Redis/) but using lovely [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis) client.
 
