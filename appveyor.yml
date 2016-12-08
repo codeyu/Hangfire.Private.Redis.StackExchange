@@ -13,7 +13,7 @@ install:
 before_build:
 - dotnet restore
 build:
-  project: Hangfire.Redis.StackExchange.sln
+  project: Hangfire.Private.Redis.StackExchange.sln
   publish_nuget: true
   publish_nuget_symbols: true
   verbosity: minimal
@@ -32,7 +32,7 @@ test_script:
 - dotnet test "Hangfire.Redis.Tests" -f netcoreapp1.0
 - dotnet test "Hangfire.Redis.Tests" -f net451
 before_package:
-- ps: nuget pack .\Hangfire.Redis.StackExchange\HangFire.Redis.StackExchange.nuspec -Version $env:APPVEYOR_BUILD_VERSION
+- ps: nuget pack .\Hangfire.Private.Redis.StackExchange\HangFire.Private.Redis.StackExchange.nuspec -Version $env:APPVEYOR_BUILD_VERSION
 deploy:
   provider: NuGet
   api_key:

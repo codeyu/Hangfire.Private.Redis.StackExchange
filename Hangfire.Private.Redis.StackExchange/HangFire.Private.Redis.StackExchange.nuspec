@@ -4,7 +4,7 @@
         <id>Hangfire.Private.Redis.StackExchange</id>
         <version>$version$-beta</version>
         <title>Hangfire Redis Storage</title>
-        <authors>Marco Casamento</authors>
+        <authors>codeyu</authors>
         <owners>codeyu</owners>
         <projectUrl>https://github.com/codeyu/Hangfire.Private.Redis.StackExchange</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
