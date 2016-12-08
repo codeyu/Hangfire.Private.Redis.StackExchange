@@ -1,4 +1,4 @@
-# Taken from https://github.com/marcoCasamento/Hangfire.Redis.StackExchange
+# Taken from https://github.com/marcoCasamento/Hangfire.Private.Redis.StackExchange
 
 
 <#
@@ -64,22 +64,22 @@ Invoke-MSBuild
 $revision = @{ $true = $env:APPVEYOR_BUILD_NUMBER; $false = 1 }[$env:APPVEYOR_BUILD_NUMBER -ne $NULL];
 $revision = "{0:D4}" -f [convert]::ToInt32($revision, 10)
 
-exec { & dotnet restore .\Hangfire.Redis.StackExchange }
-exec { & dotnet build .\Hangfire.Redis.StackExchange }
+exec { & dotnet restore .\Hangfire.Private.Redis.StackExchange }
+exec { & dotnet build .\Hangfire.Private.Redis.StackExchange }
 
 $release = Join-Path $pwd release
-exec { & dotnet pack .\Hangfire.Redis.StackExchange -c Release -o $release --version-suffix=$revision}
+exec { & dotnet pack .\Hangfire.Private.Redis.StackExchange -c Release -o $release --version-suffix=$revision}
 
 $packToZip = $false
 if($packToZip){
 
     $tmp = Join-Path $pwd tmp
-    exec { & dotnet pack .\Hangfire.Redis.StackExchange -c Release -o $tmp --version-suffix=$revision}
+    exec { & dotnet pack .\Hangfire.Private.Redis.StackExchange -c Release -o $tmp --version-suffix=$revision}
 
     # zip pack to .\artifacts\name-version.zip
-    $json = Get-Content -Raw -Path (Join-Path $pwd 'Hangfire.Redis.StackExchange\project.json') | ConvertFrom-Json
+    $json = Get-Content -Raw -Path (Join-Path $pwd 'Hangfire.Private.Redis.StackExchange\project.json') | ConvertFrom-Json
     $version = $json.version
-    $pack = Join-Path $pwd "artifacts/Hangfire.Redis.StackExchange-${version}.zip"
+    $pack = Join-Path $pwd "artifacts/Hangfire.Private.Redis.StackExchange-${version}.zip"
     New-Item -ItemType Directory -Force -Path (Join-Path $pwd artifacts) | Out-Null
     Add-Type -Assembly "System.IO.Compression.FileSystem"
     [System.IO.Compression.ZipFile]::CreateFromDirectory($tmp, $pack)
